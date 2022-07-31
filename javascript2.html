@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<body>
+<p id="demo"> </p>
+<script>
+let Talentio ="1234";
+const message=document.getElementById("demo");
+message.innerHTML = "";
+    try {
+         Talentio = Talentio.split('').reverse().joi(''); throw "Talentio.split is not a function";
+    } catch (e) {
+         document.getElementById("demo").innerHTML=e.message;
+    }
+</script>
+</body>
+</head>
